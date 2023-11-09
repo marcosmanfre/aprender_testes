@@ -7,6 +7,11 @@ def test_add():
     assert result == 5
 
 
+def test_add_strings():
+    result = my_functions.add(number_one="I like ", number_two="burgers")
+    assert result == "I like burgers"
+
+
 def test_divide():
     result = my_functions.divide(number_one=10, number_two=5)
     assert result == 2
