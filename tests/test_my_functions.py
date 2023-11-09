@@ -13,5 +13,5 @@ def test_divide():
 
 
 def test_divide_by_0():
-    result = my_functions.divide(number_one=10, number_two=0)
-    assert True
+    with pytest.raises(ValueError):
+        my_functions.divide(number_one=10, number_two=0)
